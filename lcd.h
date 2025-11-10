@@ -1,0 +1,11 @@
+void lcd_send_command(uint8_t command);
+void lcd_send_param(uint8_t data);
+void lcd_clear(void);
+void lcd_put_pixel(uint8_t x, uint8_t y);
+void _swap_int8_t(int8_t *a, int8_t *b);
+void lcd_draw_line(int8_t x0, int8_t y0, int8_t x1, int8_t y1);
+void lcd_draw_circle(int8_t x0, int8_t y0, int8_t radius);
+void lcd_put_char(uint8_t chr, uint8_t inv);
+void lcd_put_string(uint8_t * str, uint8_t inv);
+void lcd_init(void);
+void lcd_update(void);
